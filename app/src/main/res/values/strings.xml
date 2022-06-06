@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">RDXApp</string>
+    <string name="welcome_toolbar_title">Welcome!</string>
+    <string name="tcs_toolbar_title">Terms and Conditions</string>
+    <string name="credentials_toolbar_title">Credentials</string>
+    <string name="personal_info_toolbar_title">Personal Info</string>
+    <string name="set_pin_toolbar_title">Set your pin</string>
+    <string name="confirm_pin_toolbar_title">Confirm your pin</string>
+    <string name="home_toolbar_title">Home</string>
+    <string name="welcome_title">Welcome in our app</string>
+    <string name="next_button_title">Next</string>
+    <string name="terms_and_conditions">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
+    <string name="agree">Agree</string>
+    <string name="email_hint">Enter email address</string>
+    <string name="password_hint">Enter password</string>
+    <string name="first_name_hint">Enter first name</string>
+    <string name="last_name_hint">Enter last name</string>
+    <string name="phone_number_hint">Enter phone number</string>
+    <string name="set_pin_hint">Enter your pin</string>
+    <string name="confirm_pin_hint">Confirm your pin</string>
+    <string name="home_greetings">Hello %s! You are logged in.</string>
+    <string name="home_email_text">Your email is %s</string>
+    <string name="home_phone_number_text">Your phone number is %s</string>
+    <string name="logout">Logout</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="pins_different_error_body">Pins provided are different</string>
+    <string name="enter_pin_to_unlock_app">Enter pin to unlock the app</string>
+</resources>

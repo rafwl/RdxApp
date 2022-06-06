@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/navigationHome"
+        android:name="com.example.rdxapp.ui.onboarding.HomeFragment"
+        android:label=""
+        tools:layout="@layout/activity_main"/>
+
+    <fragment
+        android:id="@+id/navigationWelcome"
+        android:name="com.example.rdxapp.ui.onboarding.WelcomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/actionTerms"
+            app:destination="@id/navigationTerms"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationTerms"
+        android:name="com.example.rdxapp.ui.onboarding.TermsOfServiceFragment"
+        android:label=""
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/actionCredentials"
+            app:destination="@id/navigationCredentials"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationCredentials"
+        android:name="com.example.rdxapp.ui.onboarding.CredentialsFragment"
+        android:label=""
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/actionPersonalInfo"
+            app:destination="@id/navigationPersonalInfo"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationPersonalInfo"
+        android:name="com.example.rdxapp.ui.onboarding.PersonalInfoFragment"
+        android:label=""
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/actionSetPin"
+            app:destination="@id/navigationSetPin"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationSetPin"
+        android:name="com.example.rdxapp.ui.onboarding.SetNewPinFragment"
+        android:label=""
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/actionConfirmPin"
+            app:destination="@id/navigationConfirmPin"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationConfirmPin"
+        android:name="com.example.rdxapp.ui.onboarding.ConfirmPinFragment"
+        android:label=""
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/actionHome"
+            app:destination="@id/navigationHome"
+            app:popUpTo="@id/navigationWelcome"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+
+</navigation>
