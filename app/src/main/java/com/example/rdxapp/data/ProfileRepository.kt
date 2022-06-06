@@ -7,7 +7,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class ProfileRepository @Inject constructor(private val sharedPreferences: SharedPreferences) {
 
     fun fetchProfile(): Flow<Result<String>> {

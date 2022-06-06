@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
 import com.example.rdxapp.RDXApplication
+import com.example.rdxapp.data.ProfileRepository
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -15,6 +16,11 @@ class ApplicationModule(private val application: RDXApplication) {
     @Provides
     @Singleton
     fun provideContext(): Context = application
+
+    @Provides
+    @Singleton
+    fun provideProfileRepository(sharedPreferences: SharedPreferences): ProfileRepository
+        = ProfileRepository(sharedPreferences)
 
     @Provides
     @Singleton
